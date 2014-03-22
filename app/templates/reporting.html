@@ -1,0 +1,44 @@
+<div class="container">
+
+    <h1 class="page-header">
+
+        {{ hello}}
+
+    </h1>
+
+  
+    <div class = "chart-container">
+        <bars-chart chart-data="myData">
+            <div class="title-bar">Views for Hours</div>
+            <div id="chart-bars-viewsforhours"></div>
+            <div class="title-pie">Views for Top Players</div>
+            <div id="chart-pie-viewsfortopplayer"></div>
+        </bars-chart>
+    </div>
+
+    <div class="page-container">
+        <div class="title-table">Views by Countries</div>
+        <ul class="pagination">
+            <li class="ng-scope"><a ng-click="selectItemsPerPage(10)" class="ng-binding">10</a></li>
+            <li class="ng-scope"><a ng-click="selectItemsPerPage(20)" class="ng-binding">20</a></li>
+            <li class="ng-scope"><a ng-click="selectItemsPerPage(30)" class="ng-binding">30</a></li>
+        </ul>
+        <pagination page="currentPage" total-items="totalItems" items-per-page='itemsPerPage' direction-links='false' num-pages='numPages'></pagination>
+        <ul class="pagination">
+            <li class="ng-scope"><a ng-click="setPage(-1)" class="ng-binding">last page</a></li>
+        </ul>
+
+        <table>
+            <thead>
+                <tr><th>Countries</th><th>Views</th></tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in pagedItems">
+                    <td>{{item.name}}</td>
+                    <td>{{item.views}}</td>
+                </tr>
+            </tbody>            
+        </table>
+    </div>
+
+</div>

@@ -1,0 +1,46 @@
+td, th {
+    border: 1px solid black;
+}
+h1{
+font-size: 30px;
+}
+.chart-container{
+	position: relative;
+	height: 300px;
+	width:1000px;
+}
+.page-container{
+	position:relative;
+}
+
+.title-bar{
+	position: relative;
+	float: left;
+	margin-left: 260px;
+	font-size: 20px;
+}
+.title-pie{
+	position: relative;
+	float: right;
+	margin-right: 20px;
+	font-size: 20px;
+}
+
+.title-table{
+	position: relative;
+	float: left;
+	margin-left: 20px;
+	font-size: 20px;
+	width: 100%;
+}
+
+#chart-bars-viewsforhours{
+	position: absolute;
+	left:0;
+	margin-top: 20px;
+}
+#chart-pie-viewsfortopplayer{
+	position: absolute;
+	right: 0;
+	margin-top: 40px;
+}
