@@ -1,16 +1,18 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
     "http://www.w3.org/TR/html4/loose.dtd">
-<html data-ng-app="assignment">
+<html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>Test Assignment AngularJS and D3.js</title>
+        <link rel="stylesheet" type="text/css" href="lib_test/jasmine-1.3.0/jasmine.css" />
         <link type="text/css" rel="stylesheet" href='css/bootstrap.css' />
         <link type="text/css" rel="stylesheet" href='css/style.css' />
-        <link type="text/css" rel="stylesheet" href='css/dc.css' />
-    </head>
+        <link type="text/css" rel="stylesheet" href='css/dc.css' />       
 
-    <body>
-        <div ng-view></div>
+        <!-- include jasmine -->
+        <script type="text/javascript" src="lib_test/jasmine-1.3.0/jasmine.js"></script>
+        <script type="text/javascript" src="lib_test/jasmine-1.3.0/jasmine-html.js" ></script>
+
 
         <!-- import js specific files -->
         <script type="text/javascript" src="js/jquery.js"></script>  
@@ -20,12 +22,21 @@
         <script type="text/javascript" src="js/dc.js"></script>
         <script type="text/javascript" src="js/colorbrewer.js"></script>
         <script type="text/javascript" src="js/angular.js"></script>
+        <script type="text/javascript" src="lib_test/angular/angular-mocks.js" ></script>
         <script type="text/javascript" src="js/ui-bootstrap-tpls-0.10.0.min.js"></script>
         
         <script type="text/javascript" src="app/Application.js"></script>
         <script type="text/javascript" src="app/directives.js"></script> 
         <script type="text/javascript" src="app/models/ReportingModel.js"></script>
         <script type="text/javascript" src="app/controllers/ReportingController.js"></script>
+
+        <!-- include test files -->
+        <script type="text/javascript" src="js/test-runner.js" ></script>
+        <script type="text/javascript" src="js/spec.js" ></script>
+
+
+ </head>       
+<body>
 
     </body>
 
